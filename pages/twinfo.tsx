@@ -1,4 +1,4 @@
-import getFollowers from "./api/twitter/get_data"
+import getData from "./api/twitter/get_data"
 
 export default function Twinfo() {
   try {
