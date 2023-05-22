@@ -9,7 +9,7 @@ export default function Middle() {
 
   return (
     <div className={styles.signedInStatus}>
-    {!session && (
+    {session?.user && (
      <>
        <h1>Steps</h1>
 
