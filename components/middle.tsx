@@ -9,15 +9,20 @@ export default function Middle() {
 
   return (
     <div className={styles.signedInStatus}>
-    {session?.user && (
+    {!session && (
      <>
-       <br/>
+       <h1>Steps</h1>
+
        <Link href="/twinfo">
-         <p>Twitter Data Fetch &rarr;</p>
+         <p>A. Twitter Data Fetch &rarr;</p>
        </Link>
-       <br/>
+
+       <Link href="https://cpone-zkproof.vercel.app">
+         <p>B. Zero Knowledge Proof (Mina) &rarr;</p>
+       </Link>
+
        <Link href="https://cpone-starmint.vercel.app">
-         <p>NFT Minting (Ethereum) &rarr;</p>
+         <p>C. NFT Minting (Ethereum) &rarr;</p>
        </Link>
      </>
      )}
